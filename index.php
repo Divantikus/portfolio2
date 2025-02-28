@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1500" />
-    <link rel="shortcut icon" href="img/otherr/portf.svg" type="image/png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./img/otherr/portf.svg" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Портфолио</title>
   </head>
   <body>
@@ -70,6 +70,6 @@
         </section>
       </main>
     </div>
-    <script src="js/script.js" type="module"></script>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>
