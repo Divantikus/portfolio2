@@ -40,7 +40,7 @@
 .grade-page__table {
   display: block;
   padding: 0 40px;
-  max-height: 500px;
+  max-height: 475px;
   overflow-y: scroll;
 }
 
@@ -107,4 +107,10 @@ tr {
   flex: 0 1 20%;
   text-align: center;
   padding-left: 10px;
+}
+
+.grade-page__one-line {
+  padding: 5px 0;
+  font-size: 20px;
+  text-align: center;
 }

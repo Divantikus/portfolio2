@@ -67,6 +67,7 @@
               <?php include "./php/grade-table.php"?>
             </tbody>
           </table>
+          <?php include "./php/one-line.php"?>
         </section>
       </main>
     </div>
