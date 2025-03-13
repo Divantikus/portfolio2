@@ -1,7 +1,7 @@
 <?php
-include "./php/functions_db.php";
+include "functions_db.php";
 
-$evaluations = getAllContragents();
+$evaluations = getAllStudentAcademicPerformance();
 ?>
 
 <?php

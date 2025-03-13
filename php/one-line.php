@@ -1,5 +1,5 @@
 <?php
-  include_once "./php/functions_db.php";
+  include_once "functions_db.php";
 
   $studentInfo = getOneStr();
   $studentName = $studentInfo[0]["Имя"];

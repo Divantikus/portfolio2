@@ -12,16 +12,16 @@
   border: 3px solid transparent;
 }
 .header__button {
-  text-transform: uppercase;
   font-size: 20px;
   font-weight: 700;
-  color: var(--main-text-color);
-  background: transparent;
-  padding: 10px 20px;
-  border-radius: 30px;
-  border: 1px solid transparent;
   transition: 0.2s;
   margin: 0 0 5px 0;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: transparent;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  color: var(--main-text-color);
 }
 .header__list-of-elements .header__item:last-child .header__button {
   color: #00ff7f;
@@ -39,4 +39,8 @@
 }
 .header__list-of-elements .header__item:last-child .header__button:focus {
   color: #068747;
+}
+
+.header__link {
+  display: inline-block;
 }

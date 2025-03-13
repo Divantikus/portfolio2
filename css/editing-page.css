@@ -1,0 +1,10 @@
+.link-block {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-block__link {
+  font-size: 90px;
+}

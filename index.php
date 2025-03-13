@@ -42,7 +42,12 @@
               </button>
             </li>
             <li class="header__item">
-              <button class="header__button" id="page_contacts" tabindex="6">
+              <a href="pages/editing-page.php" target="_blank" class="header__button header__link" id="page_editing" tabindex="6">
+                Editing page
+              </a>
+            </li>
+            <li class="header__item">
+              <button class="header__button" id="page_contacts" tabindex="7">
                 contacts
               </button>
             </li>

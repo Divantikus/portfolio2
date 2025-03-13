@@ -13,7 +13,7 @@ function closeCon () {
   mysqli_close($link);
 }
 
-function getAllContragents() {
+function getAllStudentAcademicPerformance() {
   global $link;
 
   openCon();
@@ -41,4 +41,44 @@ function getOneStr(){
 
   return mysqli_fetch_all($res, MYSQLI_ASSOC);
 }
+
+function getAllStudents() {
+
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "SELECT * FROM students WHERE students.id != 1");
+
+  closeCon();
+
+  return mysqli_fetch_all($res, MYSQLI_ASSOC);
+}
+
+function addStudent($firstName, $secondName) {
+
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "INSERT INTO students(firstname, secondname) VALUES ('$firstName', '$secondName')");
+
+  closeCon();
+
+
+  return $res;
+}
+
+function deleteStudent ($id) {
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "DELETE FROM students WHERE id=$id");
+
+  closeCon();
+
+  return $res;
+}
+
 ?>
