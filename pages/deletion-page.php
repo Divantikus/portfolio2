@@ -10,7 +10,7 @@
   <form class="form" action="../php/controllers/controller-delete-student.php" method="POST">
     <h1 class="title">Удалить студента</h1>
     <select name="studentId" id="select" class="list">
-      <?php include "../php/controllers/drop-down-list-options-controller.php"?>
+      <?php include "../php/controllers/students-drop-down-list-controller.php"?>
     </select>
     <a href="editing-page.php" class="link">Вернуться на страницу редактирования</a>
     <button class="submitBtn">Удалить студента</button>
