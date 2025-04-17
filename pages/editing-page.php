@@ -15,6 +15,12 @@
       <a class="link-block__link" href="deletion-page.php">Удалить студента</a>
     </div>
     <div class="link-block">
+      <a class="link-block__link" href="add-a-rating.php">Добавить оценку</a>
+    </div>
+    <div class="link-block">
+      <a class="link-block__link" href="edit-students-name.php">Редактировать имя или фамилию</a>
+    </div>
+    <div class="link-block">
       <a class="link-block__link" href="../index.php">Вернуться на главную</a>
     </div>
   </body>

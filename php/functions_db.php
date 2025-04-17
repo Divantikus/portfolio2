@@ -81,4 +81,80 @@ function deleteStudent ($id) {
   return $res;
 }
 
+function getAllSubjects() {
+
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "SELECT * FROM disciplines");
+
+  closeCon();
+
+  return mysqli_fetch_all($res, MYSQLI_ASSOC);
+}
+
+function getAllEvaluations() {
+
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "SELECT * FROM evaluations");
+
+  closeCon();
+
+  return mysqli_fetch_all($res, MYSQLI_ASSOC);
+}
+
+function addEvaluation ($studentId, $subjectId, $evaluationId) {
+
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "INSERT INTO grade(student_id, discipline_id, evaluation_id) VALUES ($studentId, $subjectId, $evaluationId)");
+
+  closeCon();
+
+
+  return $res;
+}
+
+function updateStudentName ($studentId, $name) {
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "UPDATE students SET students.firstname = '$name' WHERE students.id = $studentId");
+
+  closeCon();
+
+  return $res;
+}
+
+function updateStudentSecondName ($studentId, $secondName) {
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "UPDATE students SET students.secondname = '$secondName' WHERE students.id =$studentId");
+
+  closeCon();
+
+  return $res;
+}
+
+function updateStudentNameAndSecondName ($studentId, $name, $secondName) {
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "UPDATE students SET students.firstname = '$name', students.secondname = '$secondName' WHERE students.id = $studentId");
+
+  closeCon();
+
+  return $res;
+}
+
 ?>
