@@ -157,4 +157,33 @@ function updateStudentNameAndSecondName ($studentId, $name, $secondName) {
   return $res;
 }
 
+function getStudentAcademicPerformanceById($studentId) {
+
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "SELECT grade.discipline_id, disciplines.name AS 'disciplineName', evaluations.evaluation AS 'evaluationName'
+  FROM grade JOIN evaluations ON evaluations.id = grade.evaluation_id JOIN disciplines ON grade.discipline_id = disciplines.id
+  WHERE grade.student_id = $studentId");
+
+  closeCon();
+
+  return mysqli_fetch_all($res, MYSQLI_ASSOC);
+}
+
+function updateEvaluation($studentId, $subjectId, $evaluationId) {
+  global $link;
+
+  openCon();
+
+  $res = mysqli_query($link, "UPDATE grade 
+  SET grade.evaluation_id = $evaluationId 
+  WHERE grade.student_id = $studentId AND grade.discipline_id = $subjectId");
+
+  closeCon();
+
+  return $res;
+}
+
 ?>

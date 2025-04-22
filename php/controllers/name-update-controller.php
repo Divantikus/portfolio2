@@ -15,6 +15,6 @@
     $res = updateStudentSecondName($studentId, $secondName);
     header("Location: ../../pages/result-page.php?res=$res&type=updSecName");
   }else {
-    header("Location: ../../pages/edit-students-name");
+    header("Location: ../../pages/edit-students-name.php");
   }
 ?>

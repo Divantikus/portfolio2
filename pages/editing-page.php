@@ -21,6 +21,9 @@
       <a class="link-block__link" href="edit-students-name.php">Редактировать имя или фамилию</a>
     </div>
     <div class="link-block">
+      <a class="link-block__link" href="choice-student.php">Редактировать оценку</a>
+    </div>
+    <div class="link-block">
       <a class="link-block__link" href="../index.php">Вернуться на главную</a>
     </div>
   </body>
